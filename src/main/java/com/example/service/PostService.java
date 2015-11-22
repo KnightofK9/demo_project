@@ -82,7 +82,7 @@ public class PostService {
     public List<Post> returnByContent(String content)
     {
         List postList = new ArrayList<Post>();
-        for(Post p:postRepository.findByContent(content))
+        for(Post p:postRepository.findByContentLikeIgnoreCase("%"+content+"%"))
         {
             postList.add(p);
         }
