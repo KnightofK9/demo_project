@@ -1,0 +1,127 @@
+{
+	"id": "cce2eb5a-f509-009d-74e0-786b2021f54f",
+	"name": "Category",
+	"description": "",
+	"order": [
+		"eb4d3d34-c514-376e-1b7c-c68885ff8430",
+		"603e7031-b588-4f4d-5307-acd30b8166fa",
+		"9d05ecee-0d76-4de3-8d3e-ba11c029face",
+		"3c0d9a3b-77df-a640-107a-9e2930263fd7"
+	],
+	"folders": [],
+	"timestamp": 1448162735298,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "3c0d9a3b-77df-a640-107a-9e2930263fd7",
+			"headers": "",
+			"url": "http://localhost:8080/category/delete",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448163733356,
+			"name": "Delete category",
+			"description": "",
+			"collectionId": "cce2eb5a-f509-009d-74e0-786b2021f54f",
+			"responses": []
+		},
+		{
+			"id": "603e7031-b588-4f4d-5307-acd30b8166fa",
+			"headers": "",
+			"url": "http://localhost:8080/category/update",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Vui choi",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "info",
+					"value": "sagadvad",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448163856507,
+			"name": "Update category",
+			"description": "",
+			"collectionId": "cce2eb5a-f509-009d-74e0-786b2021f54f",
+			"responses": []
+		},
+		{
+			"id": "9d05ecee-0d76-4de3-8d3e-ba11c029face",
+			"headers": "",
+			"url": "http://localhost:8080/category",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448163424061,
+			"name": "Show category",
+			"description": "",
+			"collectionId": "cce2eb5a-f509-009d-74e0-786b2021f54f",
+			"responses": []
+		},
+		{
+			"id": "eb4d3d34-c514-376e-1b7c-c68885ff8430",
+			"headers": "",
+			"url": "http://localhost:8080/category/add",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Di ngu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "info",
+					"value": "zzzzzz",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448163849221,
+			"name": "Add category",
+			"description": "",
+			"collectionId": "cce2eb5a-f509-009d-74e0-786b2021f54f",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,128 @@
+{
+	"id": "fa196b5e-1b32-7906-ac0f-29bdcc8c37a3",
+	"name": "Post",
+	"description": "",
+	"order": [
+		"750357ed-b607-3932-7190-3b9c64464a7a",
+		"84fbddae-f959-b73a-db85-e38ed7683d4a",
+		"326c58be-2383-2cb4-771d-28c2b021bf64",
+		"2e7256a4-1f3f-bee8-8048-03759d915b41"
+	],
+	"folders": [],
+	"timestamp": 1448163836916,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "2e7256a4-1f3f-bee8-8048-03759d915b41",
+			"headers": "",
+			"url": "http://localhost:8080/post/recent",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "fa196b5e-1b32-7906-ac0f-29bdcc8c37a3",
+			"data": [],
+			"dataMode": "params",
+			"name": "Show recent post",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1448164393111,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "326c58be-2383-2cb4-771d-28c2b021bf64",
+			"headers": "",
+			"url": "http://localhost:8080/post/delete",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448164346673,
+			"name": "Delete post",
+			"description": "",
+			"collectionId": "fa196b5e-1b32-7906-ac0f-29bdcc8c37a3",
+			"responses": []
+		},
+		{
+			"id": "750357ed-b607-3932-7190-3b9c64464a7a",
+			"headers": "",
+			"url": "http://localhost:8080/post/add",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "ownername",
+					"value": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categoryname",
+					"value": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448163987267,
+			"name": "Add post",
+			"description": "",
+			"collectionId": "fa196b5e-1b32-7906-ac0f-29bdcc8c37a3",
+			"responses": []
+		},
+		{
+			"id": "84fbddae-f959-b73a-db85-e38ed7683d4a",
+			"headers": "",
+			"url": "http://localhost:8080/post/",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "fa196b5e-1b32-7906-ac0f-29bdcc8c37a3",
+			"data": [],
+			"dataMode": "urlencoded",
+			"name": "Show post ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1448164239254,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

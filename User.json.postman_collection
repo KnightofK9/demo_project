@@ -1,0 +1,124 @@
+{
+	"id": "68790637-d260-a6f5-f526-e8421bcd3ffc",
+	"name": "User",
+	"description": "",
+	"order": [
+		"9d7b6505-f179-f3c8-b25e-9b75fb583a94",
+		"a4fa4251-d231-c94c-807b-0e3b62b35ed4",
+		"22198c91-15af-51de-e75b-619fabf8cf6b"
+	],
+	"folders": [],
+	"timestamp": 1448155280084,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "22198c91-15af-51de-e75b-619fabf8cf6b",
+			"headers": "",
+			"url": "http://localhost:8080/user",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448161669964,
+			"name": "Show user",
+			"description": "",
+			"collectionId": "68790637-d260-a6f5-f526-e8421bcd3ffc",
+			"responses": []
+		},
+		{
+			"id": "9d7b6505-f179-f3c8-b25e-9b75fb583a94",
+			"headers": "",
+			"url": "http://localhost:8080/user/add",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Phan Truong Thanh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "info",
+					"value": "dep trai",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "knightofk9@gmail.com",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448155486839,
+			"name": "Add user",
+			"description": "",
+			"collectionId": "68790637-d260-a6f5-f526-e8421bcd3ffc",
+			"responses": []
+		},
+		{
+			"id": "a4fa4251-d231-c94c-807b-0e3b62b35ed4",
+			"headers": "",
+			"url": "http://localhost:8080/user/test",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Phan Truong Thanh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "info",
+					"value": "dep trai",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "knightofk9@gmail.com",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448163350941,
+			"name": "Test user",
+			"description": "",
+			"collectionId": "68790637-d260-a6f5-f526-e8421bcd3ffc",
+			"responses": []
+		}
+	]
+}
