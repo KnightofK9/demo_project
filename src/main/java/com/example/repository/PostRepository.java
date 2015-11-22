@@ -11,6 +11,7 @@ import java.util.List;
 public interface PostRepository extends CrudRepository<Post,Long> {
     List<Post> findById(Long id);
     List<Post> findByTitle(String title);
+    List<Post> findByContent(String content);
     List<Post> findAllByOrderByTsCreatedDesc();
     List<Post> findByCategoryName(String name);
 }

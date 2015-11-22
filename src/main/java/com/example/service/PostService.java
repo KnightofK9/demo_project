@@ -69,6 +69,26 @@ public class PostService {
         }
         return postList;
     }
+    public List<Post> returnByTitle(String title)
+    {
+        List postList = new ArrayList<Post>();
+        for(Post p:postRepository.findByTitle(title))
+        {
+            postList.add(p);
+        }
+        return postList;
+
+    }
+    public List<Post> returnByContent(String content)
+    {
+        List postList = new ArrayList<Post>();
+        for(Post p:postRepository.findByTitle(content))
+        {
+            postList.add(p);
+        }
+        return postList;
+
+    }
     public   HashMap returnAllPostGroupByCategory()
     {
         HashMap postList = new HashMap();

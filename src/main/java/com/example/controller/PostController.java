@@ -64,11 +64,20 @@ public class PostController {
         return postService.returnAllPostByCreatedTime();
     }
 
+    @RequestMapping(value = "/post/search",method = RequestMethod.POST)
+    @ResponseBody
+    public List<Post> showByTitle(@RequestParam(value = "title") String title){ return postService.returnByTitle(title);}
+
+    @RequestMapping(value = "/post/searchbycontent",method = RequestMethod.POST)
+    @ResponseBody
+    public List<Post> showByContent(@RequestParam(value = "content") String content){ return postService.returnByContent(content);}
+
     @RequestMapping(value = "/post/category")
     @ResponseBody
     public HashMap showByCategory()
     {
         return postService.returnAllPostGroupByCategory();
     }
+
 
 }
