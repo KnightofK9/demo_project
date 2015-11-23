@@ -23,6 +23,7 @@ public class FileObject extends TimeStampObject
 
     public FileObject(String path) {
         super();
+
         this.path = path;
     }
     public FileObject(){}

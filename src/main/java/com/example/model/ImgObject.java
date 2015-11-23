@@ -23,6 +23,7 @@ public class ImgObject extends TimeStampObject
 
     public ImgObject(String path) {
         super();
+
         this.path = path;
     }
     public ImgObject(){}

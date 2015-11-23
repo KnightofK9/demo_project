@@ -22,6 +22,7 @@ public class VidObject extends TimeStampObject
 
     public VidObject(String path) {
         super();
+
         this.path = path;
     }
     public VidObject(){};
