@@ -1,7 +1,6 @@
 <html>
 <form id="contact-form" method="POST" enctype="multipart/form-data"
-      action="/post/upload">
-    <input type="hidden" name="redirect" value="/post/completed" />
+      action="/post/addwithfile">
     <ul>
         <li>
             <label for="title">Title:</label>
@@ -20,7 +19,7 @@
             <textarea rows="3" cols="30" name="content" id="content"></textarea>
         </li>
         <li>
-            <label for="file">Attach file/images:</label> <input type="file" name="file" id="file" value="" />
+            <label for="file">Attach file/images:</label> <input type="file" name="file" id="file" />
             <br /> <input type="submit"
                           value="Upload"> Press here to upload the file!
         </li>

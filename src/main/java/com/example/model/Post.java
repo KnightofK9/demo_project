@@ -1,6 +1,7 @@
 package com.example.model;
 
 import org.omg.CORBA.TIMEOUT;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -18,6 +19,7 @@ public class Post extends TimeStampObject {
     private String content;
     private String ownerName;
     private String categoryName;
+
     public String getTitle() {
         return title;
     }
@@ -56,7 +58,10 @@ public class Post extends TimeStampObject {
         this.content = content;
         this.ownerName = ownerName;
         this.categoryName = categoryName;
+
     }
+
+
     public Post(){super();}
 
     @Override

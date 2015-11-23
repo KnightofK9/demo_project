@@ -1,8 +1,13 @@
 package com.example.controller;
+import com.example.model.FileObject;
+import com.example.model.ImgObject;
 import com.example.model.Post;
+import com.example.model.VidObject;
 import com.example.service.PostService;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,6 +22,27 @@ public class PostController {
     @Autowired
     public PostController(PostService postService) {
         this.postService = postService;
+    }
+
+    @RequestMapping(value = "/post/addwithfile",method = RequestMethod.POST)
+    @ResponseBody
+    public int addWithFile(@RequestParam(value = "title") String title,
+                           @RequestParam(value = "content") String content,
+                           @RequestParam(value = "ownername") String ownerName,
+                           @RequestParam(value = "categoryname") String categoryName,
+                           @RequestParam(value = "file")MultipartFile file
+                           )
+    {
+        Post p = new Post(title,content,ownerName,categoryName);
+        String filePath="C:\\demo_project\\demo_project\\src\\main\\files";
+        String imgPath="C:\\demo_project\\demo_project\\src\\main\\files\\img";
+        String path = filePath;
+        String fileExt = FilenameUtils.getExtension(file.getOriginalFilename());
+        if(fileExt.compareTo("img")==0||fileExt.compareTo("jpg")==0||fileExt.compareTo("png")==0)
+        {
+            path = imgPath;
+        }
+        return postService.addPost(p);
     }
 
     @RequestMapping(value = "/post/add",method = RequestMethod.POST)
