@@ -24,4 +24,5 @@ public class VidObject extends TimeStampObject
         super();
         this.path = path;
     }
+    public VidObject(){};
 }

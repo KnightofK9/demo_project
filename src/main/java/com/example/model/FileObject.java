@@ -25,4 +25,5 @@ public class FileObject extends TimeStampObject
         super();
         this.path = path;
     }
+    public FileObject(){}
 }

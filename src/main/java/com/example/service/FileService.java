@@ -19,6 +19,8 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class FileService
@@ -69,5 +71,32 @@ public class FileService
         } else {
             return DemoConstant.FILEEMTY;
         }
+    }
+    public List<FileObject> returnFileList()
+    {
+        List<FileObject> fileObjectList = new ArrayList<FileObject>();
+        for(FileObject fileObject: fileRepository.findAll())
+        {
+            fileObjectList.add(fileObject);
+        }
+        return fileObjectList;
+    }
+    public List<ImgObject> returnImgList()
+    {
+        List<ImgObject> imgObjectList = new ArrayList<ImgObject>();
+        for(ImgObject imgObject: imgRepository.findAll())
+        {
+            imgObjectList.add(imgObject);
+        }
+        return imgObjectList;
+    }
+    public List<VidObject> returnVidList()
+    {
+        List<VidObject> vidObjectList = new ArrayList<>();
+        for(VidObject vidObject: vidRepository.findAll())
+        {
+            vidObjectList.add(vidObject);
+        }
+        return vidObjectList;
     }
 }

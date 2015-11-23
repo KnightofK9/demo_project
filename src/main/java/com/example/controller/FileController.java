@@ -4,7 +4,11 @@ import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
+import com.example.model.FileObject;
+import com.example.model.ImgObject;
+import com.example.model.VidObject;
 import com.example.service.FileService;
 import com.example.util.DemoConstant;
 import org.apache.commons.io.FilenameUtils;
@@ -25,7 +29,6 @@ public class FileController {
     public @ResponseBody String provideUploadInfo() {
         return "You can upload a file by posting to this same URL.";
     }
-
     @RequestMapping(value="/file/upload", method=RequestMethod.POST)
     public @ResponseBody String handleFileUpload(@RequestParam("file") MultipartFile file){
 
@@ -45,6 +48,26 @@ public class FileController {
         return "Unknown error";
     }
 
+    @RequestMapping(value = "/file/getfilelist")
+    @ResponseBody
+    public List<FileObject> fileList()
+    {
+        return fileService.returnFileList();
+    }
+
+    @RequestMapping(value = "/file/getimglist")
+    @ResponseBody
+    public List<ImgObject> imgList()
+    {
+        return fileService.returnImgList();
+    }
+
+    @RequestMapping(value = "/file/getvidlist")
+    @ResponseBody
+    public List<VidObject> vidList()
+    {
+        return fileService.returnVidList();
+    }
 
 
 }

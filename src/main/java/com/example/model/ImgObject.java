@@ -25,4 +25,5 @@ public class ImgObject extends TimeStampObject
         super();
         this.path = path;
     }
+    public ImgObject(){}
 }
